@@ -26,7 +26,7 @@ pipeline{
             stage("Deploy app"){
                 steps{
                     echo "Deploying the app"
-                    sh "docker container run -d -p 8000:8000 myapp:latest"
+                    sh "docker-compose down && docker-compose up -d"
                 }
             }
         }
