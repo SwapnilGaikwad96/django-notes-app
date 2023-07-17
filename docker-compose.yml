@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-     image : SwapnilGaikwad96/myapp:latest
+     image : swapnilgaikwad96/myapp:latest
      ports :
          - "8000:8000"
